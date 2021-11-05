@@ -1,0 +1,41 @@
+body {
+    padding: 2%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+    color: white;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+iframe {
+    margin-top: 10px;
+}
+
+#title-container {
+    height: 200px;
+    padding-top: 40px;
+    background-color: rgb(43, 43, 43);
+}
+
+#body-container {
+    padding: 10px;
+    display: flex;
+}
+
+#harvard-cs50 {
+    cursor: pointer;
+}
+
+.side-item {
+    width: 32vw;
+    height: 18vw;
+}
+
+.right-align {
+    text-align: right;
+}

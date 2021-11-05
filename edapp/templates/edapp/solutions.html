@@ -1,0 +1,38 @@
+{% extends 'edapp/layout.html' %}
+
+{% block title %}
+    Solutions
+{% endblock %}
+
+{% block heading %}
+    Current Solutions
+{% endblock %}
+
+{% block head %}
+    <script>
+        document.addEventListener('DOMContentLoaded', () =>{
+            document.querySelector('#harvard-cs50').onclick = () => {
+                window.location = 'https://online-learning.harvard.edu/course/cs50-introduction-computer-science?delta=0';
+            };
+        });
+    </script>
+{% endblock %}
+
+{% block left %}
+    <h2>What's Being Done?</h2>
+    <p>
+        There are a few websites providing education: 
+        <a href="https://udemy.com">Udemy</a> and <a href="https://www.edx.org">Edx</a>. Udemy is providing paid courses online, 
+        but Edx in particular is acting on this problem by providing free courses online. 
+        They have courses from a plethora of institutions of education: 
+        <a href="https://www.harvard.edu">Harvard</a> and <a href="https://www.mit.edu">MIT</a>. 
+        There are many things to learn on these websites, from computer science, to art, 
+        to even mathematics. On the edx site, you can have all of the course material for free, 
+        but there is still a paid version for courses: earn a verified certificate.
+    </p>
+{% endblock %}
+
+{% block right %}
+    <iframe class="side-item" width="560" height="315" src="https://www.youtube.com/embed/ZeThhqpZ9oI" frameborder="0" allowfullscreen></iframe></iframe>
+    <img id="harvard-cs50" class="side-item" width="560" height="315" src="https://online-learning.harvard.edu/sites/default/files/styles/social_share/public/course/cs50x-original.jpg?itok=kR_JV8DW">
+{% endblock %}

@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}Layout{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'edapp/styles.css' %}">
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        <div id="title-container">
+            <h1>{% block heading %}Layout{% endblock %}</h1>
+        </div>
+        <div id="body-container">
+            <div>
+                {% block left %}
+                {% endblock %}
+            </div>
+            <div>
+                <div class="right-align">
+                    {% block right %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
