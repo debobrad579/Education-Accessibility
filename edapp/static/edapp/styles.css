@@ -27,7 +27,7 @@ iframe {
     display: flex;
 }
 
-#harvard-cs50 {
+#harvard-cs50, #edx {
     cursor: pointer;
 }
 
