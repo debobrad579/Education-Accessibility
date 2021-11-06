@@ -8,6 +8,10 @@
     Home
 {% endblock %}
 
+{% block nav %}
+    {% include 'edapp/nav.html' with page='home' only %}
+{% endblock %}
+
 {% block left %}
     <h2>Lack of Accessible Education</h2>
     <p>
@@ -21,7 +25,6 @@
         but post-secondary education is a different story: It is extremely expensive. 
         That is the problem: People can’t afford it.
     </p>
-    {% include 'edapp/links.html' with page='home' only %}
 {% endblock %}
 
 {% block right %}

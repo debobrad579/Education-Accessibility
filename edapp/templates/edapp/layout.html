@@ -10,20 +10,26 @@
         {% endblock %}
     </head>
     <body>
-        <div id="title-container">
-            <h1>{% block heading %}Layout{% endblock %}</h1>
-        </div>
-        <div id="body-container">
-            <div>
-                {% block left %}
-                {% endblock %}
+        {% block nav %}
+        {% endblock %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1>{% block heading %}Layout{% endblock %}</h1>
             </div>
-            <div>
-                <div class="right-align">
-                    {% block right %}
+            <div id="body-container" class="panel-body">
+                <div>
+                    {% block left %}
                     {% endblock %}
+                </div>
+                <div>
+                    <div class="right-align">
+                        {% block right %}
+                        {% endblock %}
+                    </div>
                 </div>
             </div>
         </div>
+        {% block body %}
+        {% endblock %}
     </body>
 </html>

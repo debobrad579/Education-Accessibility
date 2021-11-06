@@ -8,6 +8,10 @@
     Problem
 {% endblock %}
 
+{% block nav %}
+    {% include 'edapp/nav.html' with page='problem' only %}
+{% endblock %}
+
 {% block left %}
     <h2>Why Is This A Problem?</h2>
     <p>
@@ -38,7 +42,6 @@
         Recently, some places like Google have dropped their degree hard requirement, 
         but they still hold a strong bias towards people with a degree.
     </p>
-    {% include 'edapp/links.html' with page='problem' only %}
 {% endblock %}
 
 {% block right %}
