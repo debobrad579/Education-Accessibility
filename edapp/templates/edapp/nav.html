@@ -25,6 +25,11 @@
                 {% else %}
                     <li><a href="{% url 'help' %}">What can you do?</a></li>
                 {% endif %}
+                {% if page == 'sources' %}
+                    <li class="active"><a>Sources<span class="sr-only">(current)</span></a></li>
+                {% else %}
+                    <li><a href="{% url 'sources' %}">Sources</a></li>
+                {% endif %}
             </ul>
         </div>
     </div>
