@@ -1,0 +1,27 @@
+{% extends 'edapp/layout.html' %}
+
+{% block title %}
+    Sources
+{% endblock %}
+
+{% block heading %}
+    Sources
+{% endblock %}
+
+{% block nav %}
+    {% include 'edapp/nav.html' with page='home' only %}
+{% endblock %}
+
+{% block left %}
+    <a href="https://www.cicic.ca/1301/ministries_departments_responsible_for_education_in_canada.canada">
+        cicic.ca/1301/ministries_departments_responsible_for_education_in_canada.canada
+    </a>
+    <br>
+    <a href="https://accessiblecampus.ca/tools-resources/educators-tool-kit/understanding-barriers-to-accessibility-an-educators-perspective/">
+        accessiblecampus.ca/tools-resources/educators-tool-kit/understanding-barriers-to-accessibility-an-educators-perspective
+    </a>
+    <br>
+    <a href="https://www.mvorganizing.org/what-are-the-effects-of-lack-of-education/#:~:text=People%20who%20lack%20education%20have,unemployment%2C%20exploitation%20and%20gender%20inequality.">
+        mvorganizing.org/what-are-the-effects-of-lack-of-education/#:~:text=People%20who%20lack%20education%20have,unemployment%2C%20exploitation%20and%20gender%20inequality.
+    </a>
+{% endblock %}

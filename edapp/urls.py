@@ -7,5 +7,6 @@ urlpatterns = [
     path("home", views.home, name="home"),
     path("problem", views.problem, name="problem"),
     path("current-solutions", views.solutions, name="solutions"),
-    path("how-you-can-help", views.help, name="help")
+    path("how-you-can-help", views.help, name="help"),
+    path("sources", views.sources, name="sources")
 ]
