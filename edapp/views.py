@@ -17,4 +17,4 @@ def problem(request):
     return render(request, "edapp/problem.html")
 
 def sources(request):
-    return render(request, "adapp/sources.html")
+    return render(request, "edapp/sources.html")
