@@ -12,6 +12,10 @@ h1 {
     display: flex;
 }
 
+#uni-img {
+    width: 100%;
+}
+
 #harvard-cs50, #edx {
     cursor: pointer;
 }

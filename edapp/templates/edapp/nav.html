@@ -11,9 +11,9 @@
                     <li><a href="{% url 'home' %}">Home</a></li>
                 {% endif %}
                 {% if page == 'problem' %}
-                    <li class="active"><a>What is the problem?<span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a>Why is this a problem?<span class="sr-only">(current)</span></a></li>
                 {% else %}
-                    <li><a href="{% url 'problem' %}">What is the problem?</a></li>
+                    <li><a href="{% url 'problem' %}">Why is this a problem?</a></li>
                 {% endif %}
                 {% if page == 'solutions' %}
                     <li class="active"><a>What is being done?<span class="sr-only">(current)</span></a></li>
