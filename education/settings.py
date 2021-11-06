@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-285r&^+1r4+%yefj75s@@(2tdf5uheu-vr*kca)c=xucj$oqda'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['brady-education-accessibility.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -122,7 +122,7 @@ import os
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'edapp\\static\\edapp')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'edapp\\static')]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
